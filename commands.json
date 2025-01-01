@@ -1,0 +1,7 @@
+{
+  "startFrontend": "npm run client",
+  "startBackend": "npm run start",
+  "checkGitStatus": "git status",
+  "runUnitTests": "npm test",
+  "lintCode": "npm run lint"
+}
