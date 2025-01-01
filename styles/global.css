@@ -1,0 +1,321 @@
+/* Reset and base styles */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+input {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Colors */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --text-color: #343a40;
+    --background-color: #f8f9fa;
+    --light-gray: #e9ecef;
+    --dark-gray: #495057;
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+     color: var(--text-color);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+     color: var(--text-color);
+}
+h4 {
+     font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+     color: var(--text-color);
+}
+h5 {
+     font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+h6 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+     color: var(--text-color);
+}
+
+
+p {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+      color: var(--text-color);
+}
+
+a {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Button Styles */
+button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+button:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+button:active {
+    background-color: var(--dark-gray);
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    padding: 0.75rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+    width: 100%;
+}
+input:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.margin-top-1 {
+    margin-top: 1rem;
+}
+.margin-bottom-1 {
+    margin-bottom: 1rem;
+}
+.padding-top-1 {
+    padding-top: 1rem;
+}
+.padding-bottom-1 {
+    padding-bottom: 1rem;
+}
+
+/* Flex and Grid Layouts */
+.flex-container {
+    display: flex;
+}
+.flex-row {
+     flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.flex-start{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.space-between{
+    justify-content: space-between;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+         font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+   h5 {
+       font-size: 1.25rem;
+   }
+    h6 {
+       font-size: 1rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    button {
+        padding: 0.8rem 1.75rem;
+    }
+      input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"] {
+        padding: 0.8rem;
+    }
+    .margin-top-1 {
+        margin-top: 1.25rem;
+    }
+    .margin-bottom-1 {
+        margin-bottom: 1.25rem;
+    }
+     .padding-top-1 {
+         padding-top: 1.25rem;
+     }
+     .padding-bottom-1 {
+         padding-bottom: 1.25rem;
+     }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.25rem;
+    }
+    h3 {
+         font-size: 2rem;
+    }
+    h4 {
+         font-size: 1.75rem;
+    }
+   h5 {
+        font-size: 1.5rem;
+    }
+    h6 {
+         font-size: 1.25rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    button {
+        padding: 0.9rem 2rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"] {
+        padding: 0.9rem;
+    }
+    .margin-top-1 {
+        margin-top: 1.5rem;
+    }
+    .margin-bottom-1 {
+        margin-bottom: 1.5rem;
+    }
+    .padding-top-1 {
+        padding-top: 1.5rem;
+    }
+    .padding-bottom-1 {
+        padding-bottom: 1.5rem;
+    }
+}
